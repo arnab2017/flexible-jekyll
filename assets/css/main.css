@@ -789,7 +789,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
-  height: 830px;
 }
 
 img + em {
@@ -1222,7 +1221,7 @@ a.newer-posts:hover {
   position: relative;
   padding: 0;
   margin: 0;
-  max-height: 500px;
+  max-height: 800px;
   background-color: #fafafa;
   overflow: hidden;
 }

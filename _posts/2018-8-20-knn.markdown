@@ -30,43 +30,30 @@ There are three classes and they are 1, 2, 3. We consider test pattern P = (3.0,
 Now calculate the distance between X and P using Euclidean Distance. Here X represents all the data sets from data sheets X1, X2, X3…. X18. P represents the test pattern and k = 5 stands for 5 nearest neighbors.
 In several ways we can write the formula of Euclidean Distance.
 
-1. Euclidean Distance, 
+1. Euclidean Distance, ![equation1]({{site.baseurl}}/assets/img/knnimg/e1.PNG)
+
 Or
-2. Euclidean Distance =, here XH stands for Observed value and HI stands
+
+2. Euclidean Distance ![equation2]({{site.baseurl}}/assets/img/knnimg/e2.PNG), here XH stands for Observed value and HI stands
 for Actual value.
+
 Or
-3. Euclidean Distance 
+
+3. Euclidean Distance ![equation3]({{site.baseurl}}/assets/img/knnimg/e3.PNG)
 So, I prefer the third one because it’s easy to understand and looking good.
 Now, if I write the third formula using data sets and test patterns, it will be looking like this.
-Euclidean Distance = 
+Euclidean Distance = ![equation4]({{site.baseurl}}/assets/img/knnimg/e4.PNG)
 
 
 I wish after using the data sets X and test pattern P, someone will not actually understand what’s going on in the formula. Then let’s try with the values of X and P. Here, for the value of X, I use the values of X1(0.8, 0.8) from the data sheet and for the value of P (test pattern), use P(3.0, 2.0).
 
+![equations]({{site.baseurl}}/assets/img/knnimg/e5.PNG)
 
 I wish it’s now understandable for everyone. Now, dig into the mathematics and let’s see test pattern P(3.0, 2.0) belongs to which class. In this example, we have only three classes and they are 1, 2, and 3.
 
 Let’s find the distance between X and P and find the five lowest results because k = 5
 
-For P(3.0,2.0),the distanc to X1 is d(X1,P)= √((0.8-3.0)^2+(0.8-2.0)^2 )=2.50
-For P(3.0,2.0),the distanc to X2 is d(X2,P)= √((1.0-3.0)^2+(1.0-2.0)^2 )=2.23
-For P(3.0,2.0),the distanc to X3 is d(X3,P)= √((1.2-3.0)^2+(0.8-2.0)^2 )=2.16
-For P(3.0,2.0),the distanc to X4 is d(X4,P)= √((0.8-3.0)^2+(1.2-2.0)^2 )=2.34
-For P(3.0,2.0),the distanc to X5 is d(X5,P)= √((1.2-3.0)^2+(1.2-2.0)^2 )=1.96
-For P(3.0,2.0),the distanc to X6 is d(X6,P)= √((4.0-3.0)^2+(3.0-2.0)^2 )=1.41
-For P(3.0,2.0),the distanc to X7 is d(X7,P)= √((3.8-3.0)^2+(2.8-2.0)^2 )=1.13
-For P(3.0,2.0),the distanc to X8 is d(X8,P)= √((4.2-3.0)^2+(2.8-2.0)^2 )=1.44
-For P(3.0,2.0),the distanc to X9 is d(X9,P)= √((3.8-3.0)^2+(3.2-2.0)^2 )=1.44
-For P(3.0,2.0),the distanc to X10 is d(X10,P)= √((4.2-3.0)^2+(3.2-2.0)^2 )=1.69
-For P(3.0,2.0),the distanc to X11 is d(X11,P)= √((4.4-3.0)^2+(2.8-2.0)^2 )=1.61
-For P(3.0,2.0),the distanc to X12 is d(X12,P)= √((4.4-3.0)^2+(3.2-2.0)^2 )=1.84
-For P(3.0,2.0),the distanc to X13 is d(X13,P)= √((3.2-3.0)^2+(0.4-2.0)^2 )=1.61
-For P(3.0,2.0),the distanc to X14is d(X14,P)= √((3.2-3.0)^2+(0.7-2.0)^2 )=1.31
-For P(3.0,2.0),the distanc to X15 is d(X15,P)= √((3.8-3.0)^2+(0.5-2.0)^2 )=1.70
-For P(3.0,2.0),the distanc to X16 is d(X16,P)= √((3.5-3.0)^2+(1.0-2.0)^2 )=1.12
-For P(3.0,2.0),the distanc to X17 is d(X17,P)= √((4.0-3.0)^2+(1.0-2.0)^2 )=1.41
-For P(3.0,2.0),the distanc to X18 is d(X18,P)= √((4.0-3.0)^2+(0.7-2.0)^2 )=1.64
-
+![equation1]({{site.baseurl}}/assets/img/knnimg/e6.PNG)
 
 Here the list of five lowest results with their class after calculating the distance between X and P. As we consider k = 5 then the nearest neighbor are given below in the list.
 
@@ -195,10 +182,10 @@ The test point (1.600000 0.300000) belongs to the category or class 2.
 
 Change the test point to: testData=[0.1 0.4], and the results are as follows:
 Test point (0.100000 0.400000) belongs to category 1
-![First Result]({{site.baseurl}}/assets/img/knnimg/2ndexample.jpg)
+![Second Result]({{site.baseurl}}/assets/img/knnimg/2ndexample.jpg)
 
 Change the test point to: testData=[0.3 1.2], the test results are as follows:
 The test point (0.300000 1.200000) belongs to category or class 3
-![First Result]({{site.baseurl}}/assets/img/knnimg/3rdexample.jpg)
+![Third Result]({{site.baseurl}}/assets/img/knnimg/3rdexample.jpg)
  
 After testing, it can be seen that k-NN can achieve the sample classification function very well, and the understanding is simple and easy. For the developers of the beginner classifier, k-NN is a good choice!

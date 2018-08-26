@@ -30,7 +30,7 @@ There are three classes and they are 1, 2, 3. We consider test pattern P = (3.0,
 Now calculate the distance between X and P using Euclidean Distance. Here X represents all the data sets from data sheets X1, X2, X3…. X18. P represents the test pattern and k = 5 stands for 5 nearest neighbors.
 
 In several ways we can write the formula of Euclidean Distance.
-1. Euclidean Distance, ![equation1]({{site.baseurl}}/assets/img/knnimg/e1.PNG)
+1. Euclidean Distance, ![equation1]({{site.baseurl}}/assets/img/knnimg/e1.PNG).
 
 Or
 
@@ -39,7 +39,7 @@ for Actual value.
 
 Or
 
-3. Euclidean Distance ![equation3]({{site.baseurl}}/assets/img/knnimg/e3.PNG)
+3. Euclidean Distance ![equation3]({{site.baseurl}}/assets/img/knnimg/e3.PNG).
 
 So, I prefer the third one because it’s easy to understand and looking good.
 Now, if I write the third formula using data sets and test patterns, it will be looking like this.

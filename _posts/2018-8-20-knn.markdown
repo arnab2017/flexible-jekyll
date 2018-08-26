@@ -7,11 +7,21 @@ img: knn-heading.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [K-NN, Introduction to K-NN, What is K-NN]
 ---
-K Nearest Neighbor (KNN from now on) is one of those algorithms that are very simple to understand but works incredibly well in practice. Also it is surprisingly versatile and its applications range from vision to proteins to computational geometry to graphs and so on.
+k-Nearest Neighbor (k-NN) is one of those algorithms that are very simple to understand but works incredibly well in practice. Also it is surprisingly versatile and its applications range from vision to proteins to computational geometry to graphs and so on.
 
 ## Introduction to K-NN
-k-nearest neighbors algorithm (k-NN) is a non-parametric method used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space. The output depends on whether k-NN is used for classification or regression.k-NN is a type of instance-based learning, or lazy learning, where the function is only approximated locally and all computation is deferred until classification. The k-NN algorithm is among the simplest of all machine learning algorithms.
+k-nearest neighbor algorithm (k-NN) is a non-parametric method used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space. The output depends on whether k-NN is used for classification or regression.
+k-NN is a type of instance-based learning, or lazy learning, where the function is only approximated locally and all computation is deferred until classification. The k-NN algorithm is among the simplest of all machine learning algorithms. The k-NN algorithm is an implementation method for inferring the class of things based on the Euclidean distance.
 
+## Let’s understand k-NN in mathematical way:
+Consider we have data sets with classes.
+Data set	Class	Data set	Class	Data set	Class
+X1 = (0.8, 0.8)	1	X2 = (1.0, 1.0)	1	X3 = (1.2, 0.8)	1
+X4 = (0.8, 1.2)	1	X5 = (1.2, 1.2)	1	X6 = (4.0, 3.0)	2
+X7 = (3.8, 2.8)	2	X8 = (4.2, 2.8)	2	X9 = (3.8, 3.2)	2
+X10 = (4.2, 3.2)	2	X11 = (4.4, 2.8)	2	X12 = (4.4, 3.2)	2
+X13 = (3.2, 0.4)	3	X14 = (3.2, 0.7)	3	X15 = (3.8, 0.5)	3
+X16 = (3.5, 1.0)	3	X17 = (4.0, 1.0)	3	X18 = (4.0, 0.7)	3
 
 ![I and My friends]({{site.baseurl}}/assets/img/we-in-rest.jpg)
 

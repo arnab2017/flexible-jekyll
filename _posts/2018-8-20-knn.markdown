@@ -178,7 +178,8 @@ text(0.1,1, 'third class');
 
 Third, the test results
 For the test point testData=[1.6 0.3], the test results are as follows:
-In the figure, the star represents the first type of training sample points, the circle represents the second type of training sample points, the triangle represents the third type of training sample points, and x represents the test sample points;
+In the figure, the star represents the first type of training sample points, the circle represents the second type of training sample points, the triangle represents the third type of training sample points, and x represents the test sample points.
+
 The test point (1.600000 0.300000) belongs to the category or class 2.
 ![First Result]({{site.baseurl}}/assets/img/knnimg/1stexample.jpg)
 
@@ -191,3 +192,5 @@ The test point (0.300000 1.200000) belongs to category or class 3
 ![Third Result]({{site.baseurl}}/assets/img/knnimg/3rdexample.jpg)
  
 After testing, it can be seen that k-NN can achieve the sample classification function very well, and the understanding is simple and easy. For the developers of the beginner classifier, k-NN is a good choice!
+
+##### If this post helpfull for you than, share it... 

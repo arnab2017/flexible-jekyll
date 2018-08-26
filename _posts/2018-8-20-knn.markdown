@@ -16,7 +16,7 @@ k-NN is a type of instance-based learning, or lazy learning, where the function 
 ## Let’s understand k-NN in mathematical way:
 Consider we have data sets with classes.
 | Data set | Class | Data set | Class	| Data set | Class |
-| :--- | :---: | | :--- | :---: | | :--- | :---: |
+| -------- | ----- | -------- | ----- | -------- | ----- |
 | X1 = (0.8, 0.8) |	1	| X2 = (1.0, 1.0) | 1 | X3 = (1.2, 0.8) | 1 |
 | X4 = (0.8, 1.2) |	1	| X5 = (1.2, 1.2) | 1 | X6 = (4.0, 3.0)	| 2 |
 | X7 = (3.8, 2.8) | 2	| X8 = (4.2, 2.8) | 2 | X9 = (3.8, 3.2)	| 2 |

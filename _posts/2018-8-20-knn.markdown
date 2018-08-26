@@ -25,6 +25,23 @@ Consider we have data sets with classes.
 | X13 = (3.2, 0.4) | 3 | X14 = (3.2, 0.7) | 3 | X15 = (3.8, 0.5) | 3 |
 | X16 = (3.5, 1.0) | 3 | X17 = (4.0, 1.0) | 3 | X18 = (4.0, 0.7) | 3 |
 
+There are three classes and they are 1, 2, 3. We consider test pattern P = (3.0, 2.0) and k = 5.
+
+Now calculate the distance between X and P using Euclidean Distance. Here X represents all the data sets from data sheets X1, X2, X3…. X18. P represents the test pattern and k = 5 stands for 5 nearest neighbors.
+In several ways we can write the formula of Euclidean Distance.
+
+1. Euclidean Distance, D(X,Y)=√(∑_(i=1)^n▒〖(X_i-Y_i)〗^2 )  
+Or 
+2. Euclidean Distance =√(〖(X_H- H_I)〗^2+〖(X_w- W)〗^2 ), here XH stands for Observed value and HI stands for Actual value.
+Or 
+3. Euclidean Distance [ (x,y), (a,b) ] = √((x-a)^2+ (x-b)^2 ) 
+
+So, I prefer the third one because it’s easy to understand and looking good. 
+
+
+Now, if I write the third formula using data sets and test patterns, it will be looking like this.
+Euclidean Distance = d(X, P) = √((x1-p1)^2+〖(x2-p2)〗^2 )
+
 
 ![I and My friends]({{site.baseurl}}/assets/img/we-in-rest.jpg)
 

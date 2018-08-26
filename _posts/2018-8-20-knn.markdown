@@ -28,8 +28,8 @@ Consider we have data sets with classes.
 There are three classes and they are 1, 2, 3. We consider test pattern P = (3.0, 2.0) and k = 5.
 
 Now calculate the distance between X and P using Euclidean Distance. Here X represents all the data sets from data sheets X1, X2, X3…. X18. P represents the test pattern and k = 5 stands for 5 nearest neighbors.
-In several ways we can write the formula of Euclidean Distance.
 
+In several ways we can write the formula of Euclidean Distance.
 1. Euclidean Distance, ![equation1]({{site.baseurl}}/assets/img/knnimg/e1.PNG)
 
 Or

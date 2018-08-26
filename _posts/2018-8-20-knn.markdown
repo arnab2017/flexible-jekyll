@@ -15,13 +15,14 @@ k-NN is a type of instance-based learning, or lazy learning, where the function 
 
 ## Let’s understand k-NN in mathematical way:
 Consider we have data sets with classes.
-Data set	Class	Data set	Class	Data set	Class
-X1 = (0.8, 0.8)	1	X2 = (1.0, 1.0)	1	X3 = (1.2, 0.8)	1
-X4 = (0.8, 1.2)	1	X5 = (1.2, 1.2)	1	X6 = (4.0, 3.0)	2
-X7 = (3.8, 2.8)	2	X8 = (4.2, 2.8)	2	X9 = (3.8, 3.2)	2
-X10 = (4.2, 3.2)	2	X11 = (4.4, 2.8)	2	X12 = (4.4, 3.2)	2
-X13 = (3.2, 0.4)	3	X14 = (3.2, 0.7)	3	X15 = (3.8, 0.5)	3
-X16 = (3.5, 1.0)	3	X17 = (4.0, 1.0)	3	X18 = (4.0, 0.7)	3
+| Data set | Class | Data set | Class	| Data set | Class |
+| :--- | :---: | | :--- | :---: | | :--- | :---: |
+| X1 = (0.8, 0.8) |	1	| X2 = (1.0, 1.0) | 1 | X3 = (1.2, 0.8) | 1 |
+| X4 = (0.8, 1.2) |	1	| X5 = (1.2, 1.2) | 1 | X6 = (4.0, 3.0)	| 2 |
+| X7 = (3.8, 2.8) | 2	| X8 = (4.2, 2.8) | 2 | X9 = (3.8, 3.2)	| 2 |
+| X10 = (4.2, 3.2) | 2 | X11 = (4.4, 2.8) | 2 | X12 = (4.4, 3.2) | 2 |
+| X13 = (3.2, 0.4) | 3 | X14 = (3.2, 0.7) | 3 | X15 = (3.8, 0.5) | 3 |
+| X16 = (3.5, 1.0) | 3 | X17 = (4.0, 1.0) | 3 | X18 = (4.0, 0.7) | 3 |
 
 ![I and My friends]({{site.baseurl}}/assets/img/we-in-rest.jpg)
 

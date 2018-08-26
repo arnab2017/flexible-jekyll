@@ -40,6 +40,7 @@ for Actual value.
 Or
 
 3. Euclidean Distance ![equation3]({{site.baseurl}}/assets/img/knnimg/e3.PNG)
+
 So, I prefer the third one because it’s easy to understand and looking good.
 Now, if I write the third formula using data sets and test patterns, it will be looking like this.
 

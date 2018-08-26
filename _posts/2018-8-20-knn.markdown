@@ -31,10 +31,13 @@ Now calculate the distance between X and P using Euclidean Distance. Here X repr
 
 In several ways we can write the formula of Euclidean Distance.
 > Euclidean Distance, ![equation1]({{site.baseurl}}/assets/img/knnimg/e1.PNG).
+
 Or
+
 > Euclidean Distance ![equation2]({{site.baseurl}}/assets/img/knnimg/e2.PNG), here XH stands for Observed value and HI stands
 for Actual value.
 Or
+
 > Euclidean Distance ![equation3]({{site.baseurl}}/assets/img/knnimg/e3.PNG).
 
 So, I prefer the third one because it’s easy to understand and looking good.

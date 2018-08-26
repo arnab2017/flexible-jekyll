@@ -36,6 +36,7 @@ Or
 
 > Euclidean Distance ![equation2]({{site.baseurl}}/assets/img/knnimg/e2.PNG), here XH stands for Observed value and HI stands
 for Actual value.
+
 Or
 
 > Euclidean Distance ![equation3]({{site.baseurl}}/assets/img/knnimg/e3.PNG).

@@ -39,13 +39,13 @@ Euclidean Distance = ![equation2]({{site.baseurl}}/assets/img/mknnimg/mknne2.PNG
 
 I wish after using the data sets X and test pattern P, someone will not actually understand what’s going on in the formula. Then let’s try with the values of X and P. Here, for the value of X, I use the values of X1(0.8, 0.8) from the data sheet and for the value of P (test pattern), use P(3.0, 2.0).
 
-![equations]({{site.baseurl}}/assets/img/mknnimg/mknne3.PNG)
+![equations3]({{site.baseurl}}/assets/img/mknnimg/mknne3.PNG)
 
 I wish it’s now understandable for everyone. Now, dig into the mathematics and let’s see test pattern P(3.0, 2.0) belongs to which class. In this example, we have only three classes and they are 1, 2, and 3.
 
 Let’s find the distance between X and P and find the five lowest results because k = 5
 
-![equation1]({{site.baseurl}}/assets/img/mknnimg/mknne6.PNG)
+![equation4]({{site.baseurl}}/assets/img/mknnimg/mknne4.PNG)
 
 Here the list of five lowest results with their class after calculating the distance between X and P. As we consider k = 5 then the nearest neighbor are given below in the list.
 
@@ -63,7 +63,7 @@ After finishing all the calculation from above, we consider the test pattern P= 
 
 Now applying the weighted KNN,
 
-![equations4]({{site.baseurl}}/assets/img/mknnimg/mknne4.PNG)
+![equations5]({{site.baseurl}}/assets/img/mknnimg/mknne5.PNG)
 
 We know,
 Class 1 = 0 

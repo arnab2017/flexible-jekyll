@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fuzzy K-Nearest Neighbor (FKNN)
-date: 2018-08-26 
+date: 2018-08-29 
 description: Here I discuss about Fuzzy K-NN. # Add post description (optional)
 img: fknn-heading.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)

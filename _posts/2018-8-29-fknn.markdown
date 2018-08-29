@@ -74,9 +74,9 @@ Here, I consider m = 2. We can assign any kinds of value to m. So, as I choose m
 
 We know Class 1 has no patterns like X1, X2, X16 then we consider ![equation10]({{site.baseurl}}/assets/img/fknnimg/fknne10.PNG).
 
-For Class 2, we consider μ_ij will be 1 for patterns X6 and X7 and 0 for patters X16, X14 and X7.
+For Class 2, we consider ![equation11]({{site.baseurl}}/assets/img/fknnimg/fknne11.PNG) will be 1 for patterns X6 and X7 and 0 for patters X16, X14 and X7.
 
-For Class 3, we consider μ_ij will be 1 for patterns X16, X14 and X7 and 0 for Patterns X6 and X7.
+For Class 3, we consider ![equation12]({{site.baseurl}}/assets/img/fknnimg/fknne11.PNG) will be 1 for patterns X16, X14 and X7 and 0 for Patterns X6 and X7.
 
 
 Calculation for Class 2 applying values of X6, X7, X16, X14 and X7: 

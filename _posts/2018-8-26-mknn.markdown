@@ -13,6 +13,11 @@ This  Modified K-Nearest Neighbor is better  from traditional KNN  in both  term
 ## Introduction to K-NN
 k-Nearest Neighbor (KNN) classification is one of the simplest and most fundamental classification method like other classification methods. The KNN method should be one of the first choices for classification when there is little or no prior knowledge about the distribution of the data. On the other hand MKNN or modified k-nearest neighbor classification method for enhancing the performance of k-Nearest Neighbor is proposed which uses robust neighbors of training data. Modified K-Nearest Neighbor (MKNN) inspired from the traditional KNN algorithm, the main idea is to classify an input query according to the most frequent tag in set of neighbor tags. MKNN also considered a kind of weighted KNN so that the query label is approximated by weighting the neighbors of the query. The procedure computes the frequencies of the same labeled neighbors to the total number of neighbors.
 
+## Pseudo-code of the MKNN Algorithm
+
+![algorithmpic]({{site.baseurl}}/assets/img/mknnimg/mknne6.PNG)
+
+
 ## Let’s understand MKNN in mathematical way:
 
 Consider we have data sets with classes.

@@ -3,7 +3,7 @@ layout: post
 title: K-Nearest Neighbor (K-NN)
 date: 2018-08-20 
 description: Here I discuss about K-NN. # Add post description (optional)
-img: knn-heading.jpg # Add image post (optional)
+img: nn-heading.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [K-NN, Introduction to K-NN, What is K-NN]
 ---

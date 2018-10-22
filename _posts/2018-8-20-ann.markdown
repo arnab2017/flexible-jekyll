@@ -1,0 +1,9 @@
+---
+layout: post
+title: Artificial Neural Network (ANN)
+date: 2018-10-22 
+description: Here I discuss about Artificial Neural Network (ANN). # Add post description (optional)
+img: ann-heading.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [ANN, Introduction to Artificial Neural Network, What is ANN]
+---

@@ -47,7 +47,7 @@ A threshold function is a Boolean function that determines whether a value equal
 </p>
 e2
 <p align="justify">
-Using second equation, Let n Boolean inputs be *x1, x2… xn. f* is a function that decides whether *w1x1 + w2x2 + … + wnxn = t* where *t* is a real number called the threshold and *w1, w2, .. wn* are real-numbered weights. A threshold function on *n* Boolean inputs *x1, x2, …, xn* is then a Boolean function that decides whether *w1x1 + w2x2 + … + wnxn ≥ t*. Figure of threshold function given below.
+Using second equation, Let n Boolean inputs be _x1, x2… xn. f_ is a function that decides whether *w1x1 + w2x2 + … + wnxn = t* where *t* is a real number called the threshold and *w1, w2, .. wn* are real-numbered weights. A threshold function on *n* Boolean inputs *x1, x2, …, xn* is then a Boolean function that decides whether *w1x1 + w2x2 + … + wnxn ≥ t*. Figure of threshold function given below.
 </p>
 
 ![figure3]({{site.baseurl}}/assets/img/annimg/ann3.PNG)

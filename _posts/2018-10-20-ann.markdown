@@ -17,3 +17,18 @@ The neuron is the basic unit of computation in a neural network and it often cal
 ![figure1]({{site.baseurl}}/assets/img/annimg/ann1.PNG)
 
 >Figure 1: Figure of a single neuron
+
+The above network takes numerical inputs like X1, X2 and has weights w1 and w2 associated with those inputs. There is another input 1 with weight b associated with it. It is called Bias (b). 
+
+The output Y from the neuron is computed as shown in the figure 1. The function f is non-linear and is called the activation function. Activation function is used to introduce non-linearity into the output of a neuron. Every activation function takes a single number and performs a certain fixed mathematical operation on it. There are several types of activation functions we use.
+
+Sigmoid Function:
+Sigmoid function also known as logistic function or logistic curve and it is look like “S” shape. The equation of sigmoid function is given below:
+
+e1
+
+In the sigmoid function equation “e” stands for Euler’s number, “x0” stands for the x-value of the sigmoid midpoint, L stands for the curve’s maximum value and k stands for the steepness of the curve. The main reason why we use sigmoid function is because it exists between 0 to 1. Therefore, it is especially used for models where we have to predict the probability as an output. Since probability of anything exists only between the range of 0 and 1, sigmoid is the right choice. The function is differentiable. That means, we can find the slope of the sigmoid curve at any two points. The function is monotonic but function’s derivative is not. The logistic sigmoid function can cause a neural network to get stuck at the training time. The softmax function is a more generalized logistic activation function, which is used for multiclass classification. Figure of sigmoid function given below.
+
+![figure2]({{site.baseurl}}/assets/img/annimg/ann2.PNG)
+
+>Figure 2: Figure of sigmoid function

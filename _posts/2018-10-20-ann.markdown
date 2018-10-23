@@ -239,3 +239,26 @@ Let us take an example to understand Multi-Layer Perceptrons better. Suppose we 
 | 45 | 56 | 1(Pass) |
 | 10 | 90 | 0(Fail) |
 
+<p align="justify">
+The two input columns show the number of hours the student has studied and the mid-term marks obtained by the student. The Final Result column can have two values 1 or 0 indicating whether the student passed in the final term. For example, we can see that if the student studied 35 hours and had obtained 67 marks in the mid-term, he or she ended up passing the final term.
+Now, suppose, we want to predict whether a student studying 25 hours and having 70 marks in the mid term will pass the final term.
+</p>
+
+<p align="justify">
+This is a binary classification problem where a multi-layer perceptron can learn from the given examples (training data) and make an informed prediction given a new data point. We will see below how a multi-layer perceptron learns such relationships.
+</p>
+
+## Training Multi-Layer Perceptron:
+<p align="justify">
+The process by which a Multi-Layer Perceptron learns is called the Backpropagation algorithm. I would recommend reading this Quora answer (quoted below) which URL given below where explains Backpropagation clearly.
+<p>
+https://www.quora.com/How-do-you-explain-back-propagation-algorithm-to-a-beginner-in-neural-network/answer/Hemanth-Kumar-Mantri
+
+>> Backward Propagation of Errors, often abbreviated as BackProp is one of the several ways in which an artificial neural network (ANN) can be trained. It is a supervised training scheme, which means, it learns from labeled training data (there is a supervisor, to guide its learning).
+>>To put in simple terms, BackProp is like “learning from mistakes“. The supervisor corrects the ANN whenever it makes mistakes.
+>>An ANN consists of nodes in different layers; input layer, intermediate hidden layer(s) and the output layer. The connections between nodes of adjacent layers have “weights” associated with them. The goal of learning is to assign correct weights for these edges. Given an input vector, these weights determine what the output vector is.
+>>In supervised learning, the training set is labeled. This means, for some given inputs, we know the desired/expected output (label).
+>>**BackProp Algorithm:**
+>>Initially all the edge weights are randomly assigned. For every input in the training dataset, the ANN is activated and its output is observed. This output is compared with the desired output that we already know, and the error is “propagated” back to the previous layer. This error is noted and the weights are “adjusted” accordingly. This process is repeated until the output error is below a predetermined threshold.
+>>Once the above algorithm terminates, we have a “learned” ANN which, we consider is ready to work with “new” inputs. This ANN is said to have learned from several examples (labeled data) and from its mistakes (error propagation).
+

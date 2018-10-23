@@ -146,3 +146,38 @@ Going back to the linear regression example, if w_b = 1, then we will add bias �
 I’m sure you can imagine infinite scenarios where the line of best fit does not go through the origin or even come near it. Bias units are important with neural networks in the same way.
 </p>
 
+## How do Neural Network Work:
+<p align="justify">
+Consider that we have some parameters about the property. We have area in square feet, number of bedrooms, distance from the city and the age of the property and all of those four are going to comprise as the input layer. Now of course they are probably way more parameters that define the price of a property. It is a very basic form of a neural network and it only has an input layer and output layer. It has no hidden layers and our output layer is the price that we are predicting. So here inputs variables would just be weighted up by the synopses and then output would be calculated. Basically the price would be calculated and get a price. And for instance the price could be calculated as simple as the weighted sum of all of the inputs.
+</p>
+
+![figure13]({{site.baseurl}}/assets/img/annimg/ann13.png)
+ 
+>Figure 13: Figure of Neural Network without hidden layer.
+
+<p align="justify">
+Now let’s make our network a little more complex. Here, and in all neural network diagrams, the layer on the far left is the input layer, and the layer on the far right is the output layer (the network’s prediction/answer). Any number of layers in between these two are known as hidden layers. The more the number of layers, the more nuanced the decision-making can get.
+</p>
+
+![figure14]({{site.baseurl}}/assets/img/annimg/ann14.png)
+
+>Figure 14: Figure of Neural Network with hidden layer.
+
+Now with the hidden layers artificial neural network follow some steps for work. All the steps are given below.
+
+![figure15]({{site.baseurl}}/assets/img/annimg/ann15.PNG)
+ 
+Figure 15: Figure of Steps of how Neural Network work.
+<p align="justify">
+The networks often go by different names: deep feedforward networks, feedforward neural networks, or multi-layer perceptron’s (MLP). Let’s talk about feed forward neural network.
+</p>
+## Feedforward Neural Network:
+<p align="justify">
+The feedforward neural network was the first and simplest type of artificial neural network devised. It contains multiple neurons (nodes) arranged in layers. Nodes from adjacent layers have connections or edges between them. All these connections have weights associated with them.
+</p>
+
+![figure16]({{site.baseurl}}/assets/img/annimg/ann16.png)
+ 
+>Figure 16: Figure of Feed Forward Neural Network.
+
+

@@ -244,6 +244,10 @@ The two input columns show the number of hours the student has studied and the m
 Now, suppose, we want to predict whether a student studying 25 hours and having 70 marks in the mid term will pass the final term.
 </p>
 
+| Hours Studied | Mid Term Marks | Final Term Result | 
+|:------------: | :------------: | :---------------: |
+| 25 | 70 | ? |
+
 <p align="justify">
 This is a binary classification problem where a multi-layer perceptron can learn from the given examples (training data) and make an informed prediction given a new data point. We will see below how a multi-layer perceptron learns such relationships.
 </p>
@@ -310,11 +314,15 @@ We calculate the total error at the output nodes and propagate these errors back
 Suppose that the new weights associated with the node in consideration are w4, w5 and w6 (after Backpropagation and adjusting weights).
 </p>
 
+![figure19]({{site.baseurl}}/assets/img/annimg/ann19.png)
+
 >Figure 19: Figure of Back Propagation and Weight Updating
 
 <p align="justify">
 If we now input the same example to the network again, the network should perform better than before since the weights have now been adjusted to minimize the error in prediction. As shown in Figure 20, the errors at the output nodes now reduce to [0.2, -0.2] as compared to [0.6, -0.4] earlier. This means that our network has learnt to correctly classify our first training example.
 </p>
+
+![figure20]({{site.baseurl}}/assets/img/annimg/ann20.png)
  
 >Figure 20: Figure of correct output.
 
@@ -325,6 +333,7 @@ I have avoided mathematical equations and explanation of concepts such as ‘Gra
 </p>
 
 
+
 ## Three Basic Questions for ANN.
 
 **Question 1:** What is the correlation between the time consumed by the algorithm and the volume of data (compared to traditional models like logistic)?
@@ -333,9 +342,13 @@ I have avoided mathematical equations and explanation of concepts such as ‘Gra
  
 
 **Question 2:** In what situation does the algorithm fits best?
+
 **Answer:** ANN is rarely used for predictive modelling. The reason being that Artificial Neural Networks (ANN) usually tries to over-fit the relationship. ANN is generally used in cases where what has happened in past is repeated almost exactly in same way. For example, say we are playing the game of Black Jack against a computer. An intelligent opponent based on ANN would be a very good opponent in this case (assuming they can manage to keep the computation time low). With time ANN will train itself for all possible cases of card flow. And given that we are not shuffling cards with a dealer, ANN will be able to memorize every single call. Hence, it is a kind of machine learning technique which has enormous memory. But it does not work well in case where scoring population is significantly different compared to training sample. For instance, if I plan to target customer for a campaign using their past response by an ANN. I will probably be using a wrong technique as it might have over-fitted the relationship between the response and other predictors. For same reason, it works very well in cases of image recognition and voice recognition.
  
 **Question 3:** What makes ANN a very strong model when it comes down to memorization?
+
 **Answer:** Artificial Neural Networks (ANN) have many different coefficients, which it can optimize. Hence, it can handle much more variability as compared to traditional models.
 
+
+##### If this post helpfull for you than share it... 
 

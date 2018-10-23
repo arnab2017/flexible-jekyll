@@ -181,7 +181,8 @@ The feedforward neural network was the first and simplest type of artificial neu
 >Figure 16: Figure of Feed Forward Neural Network.
 
 **A feedforward neural network can consist of three types of nodes:**
-**1. Input Nodes:**<p align="justify">The Input nodes provide information from the outside world to the network and are together referred to as the “Input Layer”. No computation is performed in any of the Input nodes. They just pass on the information to the hidden nodes.
+**1. Input Nodes:**<p align="justify">
+The Input nodes provide information from the outside world to the network and are together referred to as the “Input Layer”. No computation is performed in any of the Input nodes. They just pass on the information to the hidden nodes.
 </p>
 **2.	Hidden Nodes:** <p align="justify">The Hidden nodes have no direct connection with the outside world (hence the name “hidden”). They perform computations and transfer information from the input nodes to the output nodes. A collection of hidden nodes forms a “Hidden Layer”. While a feedforward network will only have a single input layer and a single output layer, it can have zero or multiple Hidden Layers.
 </p>

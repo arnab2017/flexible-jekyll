@@ -30,7 +30,7 @@ The above network takes numerical inputs like X1, X2 and has weights w1 and w2 a
 The output Y from the neuron is computed as shown in the figure 1. The function f is non-linear and is called the activation function. Activation function is used to introduce non-linearity into the output of a neuron. Every activation function takes a single number and performs a certain fixed mathematical operation on it. There are several types of activation functions we use.
 </p>
 <p align="justify">
-Sigmoid Function:
+##Sigmoid Function:
 Sigmoid function also known as logistic function or logistic curve and it is look like “S” shape. The equation of sigmoid function is given below:
 </p>
 e1
@@ -40,3 +40,16 @@ In the sigmoid function equation “e” stands for Euler’s number, “x0” s
 ![figure2]({{site.baseurl}}/assets/img/annimg/ann2.PNG)
 
 >Figure 2: Figure of sigmoid function
+
+##Threshold Function:
+<p align="justify">
+A threshold function is a Boolean function that determines whether a value equality of its inputs exceeded a certain threshold. A device that implements such logic is known as a threshold gate. It’s also known as Step function or Heaviside step function. The equation of threshold function is given below:
+</p>
+e2
+<p align="justify">
+Using second equation, Let n Boolean inputs be x1, x2… xn. f is a function that decides whether w1x1 + w2x2 + … + wnxn = t where t is a real number called the threshold and w1, w2, .. wn are real-numbered weights. A threshold function on n Boolean inputs x1, x2, …, xn is then a Boolean function that decides whether w1x1 + w2x2 + … + wnxn ≥ t. Figure of threshold function given below.
+</p>
+
+![figure3]({{site.baseurl}}/assets/img/annimg/ann3.PNG)
+
+>Figure 3: Figure of threshold function

@@ -20,7 +20,7 @@ The neuron is the basic unit of computation in a neural network and it often cal
 
 
 
-![figure1]({{site.baseurl}}/assets/img/annimg/ann1.PNG)
+![figure1]({{site.baseurl}}/assets/img/annimg/ann15.PNG)
 
 >Figure 1: Figure of a single neuron
 

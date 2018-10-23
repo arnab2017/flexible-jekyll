@@ -9,6 +9,9 @@ tags: [ANN, Introduction to Artificial Neural Network, What is ANN, What is Feed
 ---
 
 ## Introduction to Artificial Neural Network (ANN):
+<p align="justify">
+An Artificial Neural Network (ANN) used in deep learning, consists of different layers connected to each other and it is a computational model that is inspired by the way biological neural networks in the human brain process information. It learns from huge volumes of data and uses complex algorithms to train a neural net. Artificial Neural Networks have generated a lot of excitement in Machine Learning research and industry, thanks to many breakthrough results in speech recognition, computer vision and text processing.
+</p>
 An Artificial Neural Network (ANN) used in deep learning, consists of different layers connected to each other and it is a computational model that is inspired by the way biological neural networks in the human brain process information. It learns from huge volumes of data and uses complex algorithms to train a neural net. Artificial Neural Networks have generated a lot of excitement in Machine Learning research and industry, thanks to many breakthrough results in speech recognition, computer vision and text processing.
 
 ## Let’s Understand Single Neuron:

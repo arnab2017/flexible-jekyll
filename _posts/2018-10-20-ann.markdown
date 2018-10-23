@@ -334,7 +334,7 @@ I have avoided mathematical equations and explanation of concepts such as ‘Gra
 
 
 
-## Three Basic Questions for ANN.
+## Three Basic Questions for ANN:
 
 **Question 1:** What is the correlation between the time consumed by the algorithm and the volume of data (compared to traditional models like logistic)?
 

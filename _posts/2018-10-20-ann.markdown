@@ -265,3 +265,43 @@ https://www.quora.com/How-do-you-explain-back-propagation-algorithm-to-a-beginne
 >>**BackProp Algorithm:** Initially all the edge weights are randomly assigned. For every input in the training dataset, the ANN is activated and its output is observed. This output is compared with the desired output that we already know, and the error is “propagated” back to the previous layer. This error is noted and the weights are “adjusted” accordingly. This process is repeated until the output error is below a predetermined threshold.
 
 >>Once the above algorithm terminates, we have a “learned” ANN which, we consider is ready to work with “new” inputs. This ANN is said to have learned from several examples (labeled data) and from its mistakes (error propagation).
+
+<p align="justify">
+Now that we have an idea of how Backpropagation works, let us come back to our student-marks dataset shown above.
+The Multi Layer Perceptron shown in Figure 18 (adapted from Sebastian Raschka’s excellent visual explanation of the backpropagation algorithm) has two nodes in the input layer (apart from the Bias node) which take the inputs ‘Hours Studied’ and ‘Mid Term Marks’. It also has a hidden layer with two nodes (apart from the Bias node). The output layer has two nodes as well the upper node outputs the probability of ‘Pass’ while the lower node outputs the probability of ‘Fail’.
+</p>
+<p align="justify">
+In classification tasks, we generally use a Softmax function as the Activation Function in the Output layer of the Multi-Layer Perceptron to ensure that the outputs are probabilities and they add up to 1. The Softmax function takes a vector of arbitrary real-valued scores and squashes it to a vector of values between zero and one that sum to one. So, in this case,
+</p>
+
+<p align="Center">
+ Probability (Pass) + Probability (Fail) = 1
+</p>
+
+**Step 1: Forward Propagation**
+<p align="justify">
+All weights in the network are randomly assigned. Let us consider the hidden layer node marked V in Figure 18 below. Assume the weights of the connections from the inputs to that node are w1, w2 and w3 (as shown).
+</p>
+The network then takes the first training example as input (we know that for inputs 35 and 67, the probability of Pass is 1).
+
+•	Input to the network = [35, 67]
+•	Desired output from the network (target) = [1, 0]
+
+Then output V from the node in consideration can be calculated as below (f is an activation function such as sigmoid):
+<p align="center">
+V = f (1*w1 + 35*w2 + 67*w3)
+</p>
+
+<p align="justify">
+Similarly, outputs from the other node in the hidden layer is also calculated. The outputs of the two nodes in the hidden layer act as inputs to the two nodes in the output layer. This enables us to calculate output probabilities from the two nodes in output layer.
+</p>
+
+<p align="justify">
+Suppose the output probabilities from the two nodes in the output layer are 0.4 and 0.6 respectively (since the weights are randomly assigned, outputs will also be random). We can see that the calculated probabilities (0.4 and 0.6) are very far from the desired probabilities (1 and 0 respectively), hence the network in Figure 18 is said to have an ‘Incorrect Output’.
+</p>
+
+![figure18]({{site.baseurl}}/assets/img/annimg/ann18.png)
+
+>Figure 18: Figure of Forward Propagation
+
+

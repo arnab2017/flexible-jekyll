@@ -218,7 +218,7 @@ The Input layer has three nodes. The Bias node has a value of 1. The other two n
 The Hidden layer also has three nodes with the Bias node having an output of 1. The output of the other two nodes in the Hidden layer depends on the outputs from the Input layer (1, X1, X2) as well as the weights associated with the connections (edges). Figure 17 shows the output calculation for one of the hidden nodes (highlighted). Similarly, the output from other hidden node can be calculated. Remember that f refers to the activation function. These outputs are then fed to the nodes in the Output layer.
 </p>
 
-![figure17]({{site.baseurl}}/assets/img/annimg/ann17.png width="400px" height="100px")
+![figure17]({{site.baseurl}}/assets/img/annimg/ann17.png)
  
 >Figure 17: Figure of a Multi-Layer perceptron with a single hidden layer.
 
@@ -230,4 +230,12 @@ The Output layer has two nodes which take inputs from the Hidden layer and perfo
 Given a set of features X = (x1, x2, …) and a target y, a Multi-Layer Perceptron can learn the relationship between the features and the target, for either classification or regression.
 </p>
 Let us take an example to understand Multi-Layer Perceptrons better. Suppose we have the following student marks dataset:
+
+| Hours Studied | Mid Term Marks | Final Term Result | 
+|:------------: | :------------: | :---------------: |
+| 35 | 67 | 1(Pass) |
+| 12 | 75 | 0(Fail) |
+| 16 | 89 | 1(Pass) |
+| 45 | 56 | 1(Pass) |
+| 10 | 90 | 0(Fail) |
 

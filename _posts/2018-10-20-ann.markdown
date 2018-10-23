@@ -14,6 +14,6 @@ An Artificial Neural Network (ANN) used in deep learning, consists of different 
 ## Let’s Understand Single Neuron:
 The neuron is the basic unit of computation in a neural network and it often called a node or unit. It receives input from some other nodes or from an external source and computes an output. Each input has an associated weight (w), which is assigned based on its relative importance to other inputs. The node applies a function f (defined below) to the weighted sum of its inputs as shown in the figure below. 
 
-![equations]({{site.baseurl}}/assets/img/annimg/ann-1.PNG)
+![figures]({{site.baseurl}}/assets/img/annimg/ann1.PNG)
 
 >Figure 1: Figure of a single neuron

@@ -81,7 +81,7 @@ e4
 The advantage is that the negative inputs will be mapped strongly negative and the zero inputs will be mapped near zero in the tanh graph. The function is differentiable. The function is monotonic while its derivative is not monotonic. The tanh function is mainly used classification between two classes. Both tanh and logistic sigmoid activation functions are used in feed-forward nets.
 </p>
 
-![figure5]({{site.baseurl}}/assets/img/annimg/ann5.png)
+![figure5]({{site.baseurl}}/assets/img/annimg/ann5.jpeg)
 
 >Figure 5: Figure of Tanh activation function with Sigmoid
 
@@ -110,7 +110,7 @@ Bias units still have outgoing connections and they can contribute to the output
 
 Let’s say act()  our activation function   is just f(x) = x, or the identity function. In such case, our ANN would represent a line because the output is just the weight (m) times the input (x).
 
-![figure8]({{site.baseurl}}/assets/img/annimg/ann8.png)
+![figure8]({{site.baseurl}}/assets/img/annimg/ann8.gif)
 
 >Figure 8: Figure of Bias
 
@@ -119,7 +119,7 @@ When we change our weight w1, we will change the gradient of the function to mak
 So, we know that our function output = w · input (y = mx) needs to have this constant term added to it. In other words, we can say output = w · input + w_b, where w_b is our constant term c. When we use neural networks, though, or do any multi-variable learning, our computations will be done through Linear Algebra and matrix arithmetic eg. dot-product, multiplication. This can also be seen graphically in the ANN. There should be a matching number of weights and activities for a weighted sum to occur. Because of this, we need to “add” an extra input term so that we can add a constant term with it. Since, one multiplied by any value is that value, we just “insert” an extra value of 1 at every layer. This is called the bias unit.
 </p>
 
-![figure9]({{site.baseurl}}/assets/img/annimg/ann9.png)
+![figure9]({{site.baseurl}}/assets/img/annimg/ann9.gif)
 
 >Figure 9: Figure of Bias in layer
 <p align="justify">

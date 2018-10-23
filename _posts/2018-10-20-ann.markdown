@@ -36,9 +36,6 @@ The output Y from the neuron is computed as shown in the figure 1. The function 
 Sigmoid function also known as logistic function or logistic curve and it is look like “S” shape. The equation of sigmoid function is given below:
 </p>
 e1
-```math
-f(x)=  L/(1+ e^(-k(x-x_0)) )
-```
 <p align="justify">
 In the sigmoid function equation “e” stands for Euler’s number, “x0” stands for the x-value of the sigmoid midpoint, L stands for the curve’s maximum value and k stands for the steepness of the curve. The main reason why we use sigmoid function is because it exists between 0 to 1. Therefore, it is especially used for models where we have to predict the probability as an output. Since probability of anything exists only between the range of 0 and 1, sigmoid is the right choice. The function is differentiable. That means, we can find the slope of the sigmoid curve at any two points. The function is monotonic but function’s derivative is not. The logistic sigmoid function can cause a neural network to get stuck at the training time. The softmax function is a more generalized logistic activation function, which is used for multiclass classification. Figure of sigmoid function given below.
 </p>
@@ -61,4 +58,91 @@ Using second equation, Let n Boolean inputs be x1,x2…xn. f is a function that 
 
 >Figure 3: Figure of threshold function
 
+## Rectifier Linear Unit Activation Function (ReLU):
+<p align="justify">
+ReLU is an activation function that defined as the positive part of its argument. The ReLU is the most used activation function in the world right now. Since, it is used in almost all the convolutional neural networks or deep learning. Its equation is:
+</p>
+e3
+
+<p align="justify">
+In the equation x the is input to a neuron. This is also known as a ramp function. Rectified linear units find applications in computer vision and speech recognition using deep neural nets. The function and its derivative both are monotonic. But the issue is that all the negative values become zero immediately which decreases the ability of the model to fit or train from the data properly. That means any negative input given to the ReLU activation function turns the value into zero immediately in the graph, which in turns affects the resulting graph by not mapping the negative values appropriately. Figure of threshold function given below.
+</p>
+
+![figure4]({{site.baseurl}}/assets/img/annimg/ann4.png)
+
+>Figure 4: Figure of ReLU activation function
+<p align="justify">
+Tanh or Hyperbolic Tangent Activation Function:
+Tanh is also like logistic sigmoid but better. The range of the tanh function is from -1 to 1. Tanh is also sigmoidal s-shaped. Equation of Tanh is:
+</p>
+
+e4
+<p align="justify">
+The advantage is that the negative inputs will be mapped strongly negative and the zero inputs will be mapped near zero in the tanh graph. The function is differentiable. The function is monotonic while its derivative is not monotonic. The tanh function is mainly used classification between two classes. Both tanh and logistic sigmoid activation functions are used in feed-forward nets.
+</p>
+
+![figure5]({{site.baseurl}}/assets/img/annimg/ann5.png)
+
+>Figure 5: Figure of Tanh activation function with Sigmoid
+
+## Let’s try to understand Bias:
+<p align="justify">
+A Bias neuron allows a classifier to shift the decision boundary left or right. In an algebraic term, the bias neuron allows a classifier to translate its decision boundary. To translation is to “move every point a constant distance in a specified direction”.
+
+A bias unit is an “extra” neuron added to each pre-output layer that stores the value of 1. Bias units aren’t connected to any previous layer and in this sense don’t represent a true “activity”.
+</p>
+Take a look at the following illustration:
+
+![figure6]({{site.baseurl}}/assets/img/annimg/ann6.png)
+
+>Figure 6: Figure of Bias in layer
+
+<p align="justify">
+The bias units are characterized by the text “+1”. We can see, a bias unit is just appended to the end of the input and each hidden layer, and isn’t influenced by the values in the previous layer. In other words, these neurons don’t have any incoming connections.
+</p>
+<p align="justify">
+Bias units still have outgoing connections and they can contribute to the output of the ANN. Let’s call the outgoing weights of the bias units w_b. Now, let’s look at a really simple neural network that just has one input and one connection:
+</p>
+
+![figure]({{site.baseurl}}/assets/img/annimg/ann7.png)
+
+>Figure 7: Figure of Bias
+
+Let’s say act()  our activation function   is just f(x) = x, or the identity function. In such case, our ANN would represent a line because the output is just the weight (m) times the input (x).
+
+![figure8]({{site.baseurl}}/assets/img/annimg/ann8.png)
+
+>Figure 8: Figure of Bias
+
+When we change our weight w1, we will change the gradient of the function to make it steeper or flatter.
+<p align="justify">
+So, we know that our function output = w · input (y = mx) needs to have this constant term added to it. In other words, we can say output = w · input + w_b, where w_b is our constant term c. When we use neural networks, though, or do any multi-variable learning, our computations will be done through Linear Algebra and matrix arithmetic eg. dot-product, multiplication. This can also be seen graphically in the ANN. There should be a matching number of weights and activities for a weighted sum to occur. Because of this, we need to “add” an extra input term so that we can add a constant term with it. Since, one multiplied by any value is that value, we just “insert” an extra value of 1 at every layer. This is called the bias unit.
+</p>
+
+![figure9]({{site.baseurl}}/assets/img/annimg/ann9.png)
+
+>Figure 9: Figure of Bias in layer
+<p align="justify">
+From this diagram, you can see that we have now added the bias term and hence the weight w_b will be added to the weighted sum, and fed through activation function as a constant value. This constant term, also called the “intercept term”, shifts the activation function to the left or to the right. It will also be the output when the input is zero. Here is a diagram of how different weights will transform the activation function (sigmoid in this case) by scaling it up/down.
+</p>
+
+![figure10]({{site.baseurl}}/assets/img/annimg/ann10.png)
+
+Figure 10: Figure of Bias in sign waves
+
+But now, by adding the bias unit, we the possibility of translating the activation function exists:
+
+![figure11]({{site.baseurl}}/assets/img/annimg/ann11.png)
+
+>Figure 11: Figure of Bias in sign waves
+<p align="justify">
+Going back to the linear regression example, if w_b = 1, then we will add bias · w_b= 1 · w_b = w_b to the activation function. In the example with the line, we can create a non-zero y-intercept:
+</p>
+
+![figure12]({{site.baseurl}}/assets/img/annimg/ann12.png)
+
+>Figure 12: Figure of Bias
+<p align="justify">
+I’m sure you can imagine infinite scenarios where the line of best fit does not go through the origin or even come near it. Bias units are important with neural networks in the same way.
+</p>
 

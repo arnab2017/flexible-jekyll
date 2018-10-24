@@ -256,7 +256,7 @@ This is a binary classification problem where a multi-layer perceptron can learn
 
 <p align="justify">
 The process by which a Multi-Layer Perceptron learns is called the Backpropagation algorithm. I would recommend reading this Quora answer (quoted below) which URL given below where explains Backpropagation clearly.
-<p>
+</p>
 
 [[Link of Quora Answer](https://www.quora.com/How-do-you-explain-back-propagation-algorithm-to-a-beginner-in-neural-network/answer/Hemanth-Kumar-Mantri)]
 

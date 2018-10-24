@@ -290,6 +290,7 @@ All weights in the network are randomly assigned. Let us consider the hidden lay
 The network then takes the first training example as input (we know that for inputs 35 and 67, the probability of Pass is 1).
 
 •	Input to the network = [35, 67]
+
 •	Desired output from the network (target) = [1, 0]
 
 Then output V from the node in consideration can be calculated as below (f is an activation function such as sigmoid):

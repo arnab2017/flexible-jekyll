@@ -276,6 +276,7 @@ https://www.quora.com/How-do-you-explain-back-propagation-algorithm-to-a-beginne
 Now that we have an idea of how Backpropagation works, let us come back to our student-marks dataset shown above.
 The Multi Layer Perceptron shown in Figure 18 (adapted from Sebastian Raschka’s excellent visual explanation of the backpropagation algorithm) has two nodes in the input layer (apart from the Bias node) which take the inputs ‘Hours Studied’ and ‘Mid Term Marks’. It also has a hidden layer with two nodes (apart from the Bias node). The output layer has two nodes as well the upper node outputs the probability of ‘Pass’ while the lower node outputs the probability of ‘Fail’.
 </p>
+
 <p align="justify">
 In classification tasks, we generally use a Softmax function as the Activation Function in the Output layer of the Multi-Layer Perceptron to ensure that the outputs are probabilities and they add up to 1. The Softmax function takes a vector of arbitrary real-valued scores and squashes it to a vector of values between zero and one that sum to one. So, in this case,
 </p>
@@ -296,6 +297,7 @@ The network then takes the first training example as input (we know that for inp
 •	Desired output from the network (target) = [1, 0]
 
 Then output V from the node in consideration can be calculated as below (f is an activation function such as sigmoid):
+
 <p align="center">
 V = f (1*w1 + 35*w2 + 67*w3)
 </p>
@@ -332,6 +334,7 @@ If we now input the same example to the network again, the network should perfor
 >Figure 20: Figure of correct output.
 
 We repeat this process with all other training examples in our dataset. Then, our network is said to have learnt those examples.
+
 <p align="justify">
 If we now want to predict whether a student studying 25 hours and having 70 marks in the mid-term will pass the final term, we go through the forward propagation step and find the output probabilities for Pass and Fail.
 I have avoided mathematical equations and explanation of concepts such as ‘Gradient Descent’ here and have rather tried to develop an intuition for the algorithm. For a more mathematically involved discussion of the Backpropagation algorithm, refer to this link.

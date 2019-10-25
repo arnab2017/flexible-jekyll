@@ -1,6 +1,6 @@
 title: Welcome to my blog
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, My name is Arnab Barua and I am a back-end web developer. I decided to start this blog in order to share what I am learning.
+  Hi, My name is Arnab Barua and I am learner of Machine Learning and Deep Learning. I decided to start this blog in order to share what I am learning.
   I believe that it will be helpfull for the students of Computer Science.
 permalink: ':title/'
 baseurl: "/arnab_blog" # the subpath of your site, e.g. /blog
@@ -10,7 +10,7 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Arnab Barua # add your name
 author-img: arnab-barua.jpg # add your photo
-about-author: I am a web developer focusing on back-end development. Always hungry to keep learning. # add description
+about-author: I am a learner of Machine Learning and Deep Learning. Always hungry to keep learning. # add description
 social-twitter: # add your Twitter handle
 social-facebook: arnab.barua.35 # add your Facebook handle
 social-github: arnabfly # add your Github handle

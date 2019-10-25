@@ -45,6 +45,7 @@ The parameters for calculation given below:
 3.	A single kernel of filter size 5X5 (K=5)
 4.	Number of padding 0 (P=0)
 5.	Stride 1 (S=1) 
+
 Now insert all the values in the equation.
 
 ![equation1]({{site.baseurl}}/assets/img/lenetfive/equation1.PNG)
@@ -63,13 +64,14 @@ The parameters for calculation given below:
 3.	A single kernel of filter size 2X2 (K=2)
 4.	Number of padding 0 (P=0)
 5.	Stride 2 (S=2) 
+
 Now insert all the values in the equation.
 
 ![equation2]({{site.baseurl}}/assets/img/lenetfive/equation2.PNG)
 
 So, after the calculation, the result is as same as the image, and the output shape of the first average pooling layer turns into 14x14x6.
 
-Layer 3: 
+## Layer 3: 
 After that, in the Lenet-5 architecture, the output of the first average pooling layer goes through again convolution, and the number of the filter is 16 having size 5x5 with stride value 1. After applying the convolution output shape change from 14x14x6 to 10x10x16. For better understanding, a picture of the process presented below.
 
 ![figure4]({{site.baseurl}}/assets/img/lenetfive/image4.png)
@@ -81,6 +83,7 @@ The parameters for calculation given below:
 3.	A single kernel of filter size 5X5 (K=5)
 4.	Number of padding 0 (P=0)
 5.	Stride 1 (S=1) 
+
 Now insert all the values in the equation.
 
 ![equation3]({{site.baseurl}}/assets/img/lenetfive/equation3.PNG)
@@ -99,6 +102,7 @@ The parameters for calculation given below:
 3.	A single kernel of filter size 2X2 (K=2)
 4.	Number of padding 0 (P=0)
 5.	Stride 2 (S=2) 
+
 Now insert all the values in the equation.
 
 ![equation4]({{site.baseurl}}/assets/img/lenetfive/equation4.PNG)
@@ -120,6 +124,8 @@ The sixth layer of the Lenet-5 architecture is a fully connected layer with 84 f
 The final layer of the LeNet-5 architecture is a fully connected output layer y shortly output layer with ten possible values where tanh used as an activation function. A fully connected layer with 84 units connects with the output layer. After summation, all the values of the units of the output layers must stay between 0-1. As the LeNet-5 architecture used for MNIST data, that’s why ten possible units of output layers corresponding to the digits from 0 to 9. For better understanding, a picture of the process presented below.
 
 ![figure8]({{site.baseurl}}/assets/img/lenetfive/image8.png)
+
+
 
 
 ##### If this post helpfull for you than share it... 

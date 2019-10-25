@@ -75,6 +75,7 @@ The parameters for calculation given below:
 3.	Single kernel size 5X5 (K=5)
 4.	Number of padding 0 (P=0)
 5.	Stride 1 (S=1) 
+
 Now insert all the values in the equation.
 
 ![equation6]({{site.baseurl}}/assets/img/lenetone/equation6.PNG)
@@ -93,6 +94,7 @@ The parameters for the calculation given below:
 3.	Single kernel size 2X2 (K=2)
 4.	Number of padding 0 (P=0)
 5.	Stride 2 (S=2) 
+
 Now insert all the values in the equation.
 
 ![equation7]({{site.baseurl}}/assets/img/lenetone/equation7.PNG)
@@ -111,6 +113,7 @@ The parameters for calculation given below:
 3.	Single kernel size 5X5 (K=5)
 4.	Number of padding 0 (P=0)
 5.	Stride 1 (S=1) 
+
 Now insert all the values in the equation.
 
 ![equation8]({{site.baseurl}}/assets/img/lenetone/equation8.PNG)
@@ -128,6 +131,7 @@ The parameters for the calculation given below:
 3.	Single kernel size 2X2 (K=2)
 4.	Number of padding 0 (P=0)
 5.	Stride 2 (S=2) 
+
 Now insert all the values in the equation.
 
 ![equation9]({{site.baseurl}}/assets/img/lenetone/equation9.PNG)

@@ -7,3 +7,119 @@ img: lenetfive-heading.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [LeNet-5, Introduction to Lenet-5, What is LeNet-5, Lenet-5 CNN]
 ---
+
+## Introduction:
+LeNet-5 architecture is one of the simple architecture than other architectures of the convolutional neural network, and it is easy to understand and implement. Yann LeCun proposed Lenet along with Yoshua Bengio, Leon Bottou, and Patrick Haffner for handwritten and machine-printed character recognition in 1990. LeNet-5 is the updated version of LeNet-4. Picture of LeNet-5 architecture presented below.
+
+![figure1]({{site.baseurl}}/assets/img/lenetfive/image1.png)
+
+## Prerequisite:
+You have to understand how convolution, pooling and fully connected layer work. Otherwise, you will not understand. You also need to know how to calculate shape. 
+[[Click to Know How to Calculate Shape](https://arnabfly.github.io/arnab_blog/lenet1/)]
+
+
+The LeNet-5 architecture consists of, three convolution layer (C1, C3, and C5), two average pooling layer (S2, and S4), followed by a flattening convolution layer, one fully connected layer (F6), and one output layer. In this architecture, tanh used as an activation function.
+The specification of the LeNet-5 presented below layer-wise.
+The input shape of the image is 32X32.
+Six 28X28 feature maps in the first convolutional layer by using six 5X5 kernels or filters.
+Six 14X14 feature maps in the first average pooling layer by using six 2X2 kernels or filters.
+Sixteen 10X10 feature maps in the second convolution layer by using sixteen 5X5 kernels or filters.
+Sixteen 5X5 feature maps in the second average pooling layer by using sixteen 2X2 kernels or filters.
+One fully connected layer of 120 units.
+Second fully connected layer of 84 units.
+Output layers of 10 units.
+The units of the output layer depend on the number of classes. Suppose ten classes in the dataset, then number units in the output layer must be 10.
+
+Now, I am going to explain how to generate outputs in each layer. 
+
+
+## Layer 1: 
+At the beginning of the LeNet-5 architecture, the grayscale input image goes through 6 filters having size 5x5 with stride value 1, and the output shape change from 32x32x1 to 28x28x6. For better understanding, a picture of the process presented below.
+
+![figure2]({{site.baseurl}}/assets/img/lenetfive/image2.png)
+
+Now we use an equation to know how the process work, which helps to calculate output shape. 
+The parameters for calculation given below:
+1.	Input size 32x32x1 (W=32).
+2.	The total number of kernels or filters 6.
+3.	A single kernel of filter size 5X5 (K=5)
+4.	Number of padding 0 (P=0)
+5.	Stride 1 (S=1) 
+Now insert all the values in the equation.
+
+![equation1]({{site.baseurl}}/assets/img/lenetfive/equation1.PNG)
+
+So, after the calculation, the result is as same as the image, and the output shape of the first convolution layer turns into 32x32x6.
+
+## Layer 2: 
+Then in the Lenet-5 architecture, the output of the first convolution goes through the average pooling, and the number of the filter is six having size 2x2 with stride value 2. After applying the average pooling output shape change from 28x28x6 to 14x14x6. For better understanding, a picture of the process presented below.
+
+![figure3]({{site.baseurl}}/assets/img/lenetfive/image3.png)
+
+Now we use the equation to know how the process work, which helps to calculate output shape. 
+The parameters for calculation given below:
+1.	Input size 28x28x6 (W=28).
+2.	The total number of kernels or filters 6.
+3.	A single kernel of filter size 2X2 (K=2)
+4.	Number of padding 0 (P=0)
+5.	Stride 2 (S=2) 
+Now insert all the values in the equation.
+
+![equation2]({{site.baseurl}}/assets/img/lenetfive/equation2.PNG)
+
+So, after the calculation, the result is as same as the image, and the output shape of the first average pooling layer turns into 14x14x6.
+
+Layer 3: 
+After that, in the Lenet-5 architecture, the output of the first average pooling layer goes through again convolution, and the number of the filter is 16 having size 5x5 with stride value 1. After applying the convolution output shape change from 14x14x6 to 10x10x16. For better understanding, a picture of the process presented below.
+
+![figure4]({{site.baseurl}}/assets/img/lenetfive/image4.png)
+
+Now we use the equation to know how the process work, which helps to calculate output shape. 
+The parameters for calculation given below:
+1.	Input size 14x14x6 (W=14).
+2.	The total number of kernels or filters 16.
+3.	A single kernel of filter size 5X5 (K=5)
+4.	Number of padding 0 (P=0)
+5.	Stride 1 (S=1) 
+Now insert all the values in the equation.
+
+![equation3]({{site.baseurl}}/assets/img/lenetfive/equation3.PNG)
+
+So, after the calculation, the result is as same as the image, and the output shape of the second convolution layer turns into 10x10x16.
+
+## Layer 4: 
+After that, in the Lenet-5 architecture, the output of the second convolution layer goes through again average pooling, and the number of the filter is 16 having size 2x2 with stride value 2. After applying the average pooling output shape change from 10x10x16 to 5x5x16. For better understanding, a picture of the process presented below.
+
+![figure5]({{site.baseurl}}/assets/img/lenetfive/image5.png)
+
+Now we use the equation to know how the process work, which helps to calculate output shape. 
+The parameters for calculation given below:
+1.	Input size 10x10x16 (W=10).
+2.	The total number of kernels or filters 16.
+3.	A single kernel of filter size 2X2 (K=2)
+4.	Number of padding 0 (P=0)
+5.	Stride 2 (S=2) 
+Now insert all the values in the equation.
+
+![equation4]({{site.baseurl}}/assets/img/lenetfive/equation4.PNG)
+
+So, after the calculation, the result is as same as the image, and the output shape of the second average pooling layer turns into 5x5x16.
+
+## Layer 5: 
+The fifth layer of the Lenet-5 architecture is a fully connected convolutional layer with 120 feature maps and each of size 1x1. After the fourth layer, the output of the average pooling layer turns into a flatten layer, and that flatten layer connects with the fully connected layer. So, the output shape of the second average layer 5x5x16 turns into a flatten layer, and the shape is 400x1. All 400 neurons or units of the flatten layer connected to all 120 neurons or units of the fully connected layer. In the the image of Lenet-5's, the first fully connected layer marked as C5, and some people say it as a convolution; no problem will happen if we think C5 is a fully connected layer. For better understanding, a picture of the process presented below.
+
+
+![figure6]({{site.baseurl}}/assets/img/lenetfive/image6.png)
+
+## Layer 6: 
+The sixth layer of the Lenet-5 architecture is a fully connected layer with 84 feature maps and each of size 1x1. This layer fully connected with the previous fully connected layer with 120 feature maps. For better understanding, a picture of the process presented below.
+
+![figure7]({{site.baseurl}}/assets/img/lenetfive/image7.png)
+
+## Layer 7: 
+The final layer of the LeNet-5 architecture is a fully connected output layer y shortly output layer with ten possible values where tanh used as an activation function. A fully connected layer with 84 units connects with the output layer. After summation, all the values of the units of the output layers must stay between 0-1. As the LeNet-5 architecture used for MNIST data, that’s why ten possible units of output layers corresponding to the digits from 0 to 9. For better understanding, a picture of the process presented below.
+
+![figure8]({{site.baseurl}}/assets/img/lenetfive/image8.png)
+
+
+##### If this post helpfull for you than share it... 

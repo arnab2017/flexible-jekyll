@@ -16,7 +16,9 @@ You have to understand how convolution, pooling and fully connected layer work. 
 
 ## How to calculate shape:
 At first, we need to know how to calculate shape. Its important and help to understand and breakdown all the architecture of CNN. When we apply convolution, pooling to the image, the calculation of the shape helps to understand what will be the output after applying convolution and pooling. The equation which generally use to calculate the shape given below. It's applicable when height and the width of the image are the same.
+
 ![equation1]({{site.baseurl}}/assets/img/lenetone/equation1.PNG)
+
 Here,
 W is the height or width of the image.
 K is the height or width of the single filter or kernel.

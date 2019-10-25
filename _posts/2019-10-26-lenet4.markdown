@@ -43,6 +43,7 @@ The parameters for calculation given below:
 3.	Single kernel of filter size 5X5 (K=5)
 4.	Number of padding 0 (P=0)
 5.	Stride 1 (S=1) 
+
 Now insert all the values in the equation.
 
 ![equation1]({{site.baseurl}}/assets/img/lenetfour/equation1.PNG)
@@ -61,6 +62,7 @@ The parameters for calculation given below:
 3.	Single kernel of filter size 2X2 (K=2)
 4.	Number of padding 0 (P=0)
 5.	Stride 2 (S=2) 
+
 Now insert all the values in the equation.
 
 ![equation2]({{site.baseurl}}/assets/img/lenetfour/equation2.PNG)
@@ -79,6 +81,7 @@ The parameters for calculation given below:
 3.	Single kernel of filter size 5X5 (K=5)
 4.	Number of padding 0 (P=0)
 5.	Stride 1 (S=1) 
+
 Now insert all the values in the equation.
 
 ![equation3]({{site.baseurl}}/assets/img/lenetfour/equation3.PNG)
@@ -97,6 +100,7 @@ The parameters for calculation given below:
 3.	Single kernel of filter size 2X2 (K=2)
 4.	Number of padding 0 (P=0)
 5.	Stride 2 (S=2) 
+
 Now insert all the values in the equation.
 
 ![equation4]({{site.baseurl}}/assets/img/lenetfour/equation4.PNG)

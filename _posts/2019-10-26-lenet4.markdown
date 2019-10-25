@@ -19,7 +19,7 @@ You have to understand how convolution, pooling and fully connected layer work. 
 
 
 The LeNet-4 architecture consists of, two convolution layer, two average pooling layer, followed by a flattening convolution layer, one fully connected layer and one output layer. In this architecture, tanh used as an activation function.
-The specification of the LeNet-1 presented below layer-wise.
+The specification of the LeNet-4 presented below layer-wise.
 Input shape of the image is 32X32.
 Four 28X28 feature maps in the first convolutional layer by using four 5X5 kernels or filters.
 Four 14X14 feature maps in the first average pooling layer by using four 2X2 kernels or filters.

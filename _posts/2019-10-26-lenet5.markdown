@@ -1,1 +1,9 @@
-
+---
+layout: post
+title: Break Down Lenet-5
+date: 2019-10-26 
+description: Here I will discuss about Lenet-5. # Add post description (optional)
+img: lenetfive-heading.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [LeNet-5, Introduction to Lenet-5, What is LeNet-5, Lenet-5 CNN]
+---

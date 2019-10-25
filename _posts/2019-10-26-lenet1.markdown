@@ -51,7 +51,7 @@ An example image presented below. Where, the size of the input image is 20X18, s
 
 Now, Its time to break down LeNet-1 architecture. The common image of the LeNet-1 architecture presented below. The LeNet-1 architecture is a first simple architecture for the convolutional neural network. It's easy to understand and implement. 
 
-![figure3]({{site.baseurl}}/assets/img/lenetone/imag3.PNG)
+![figure3]({{site.baseurl}}/assets/img/lenetone/imag3.png)
 
 The specification of the LeNet-1 presented below layerwise.
 Input shape of the image is 28X28.
@@ -66,7 +66,7 @@ Now, try to understand visually how every step works in the LeNet-1 architecture
 ## First Step: 
 In the first step, try to understand the input image to the first convolution layer. The process of this step presented below in the picture. 
 
-![figure4]({{site.baseurl}}/assets/img/lenetone/imag4.PNG)
+![figure4]({{site.baseurl}}/assets/img/lenetone/imag4.png)
 
 To generate the first convolution layer from the input image, four 5X5 size kernels used. Now we use equation which helps to calculate output shape. 
 The parameters for calculation given below:
@@ -84,7 +84,7 @@ So, after the calculation, the result is as same as the image, and the output sh
 ## Second Step:
 In the second step, try to understand the first convolution layer to first average pooling layer. The process of this step presented below in the picture. 
 
-![figure5]({{site.baseurl}}/assets/img/lenetone/imag5.PNG)
+![figure5]({{site.baseurl}}/assets/img/lenetone/imag5.png)
 
 To the generate the first average pooling layer from the first convolution layer, four 2X2 size kernels used. Now we use equation which helps to calculate output shape. 
 The parameters for the calculation given below:
@@ -102,7 +102,7 @@ So, after the calculation, the result is as same as the image, and the output sh
 ## Third Step:
 In the third step, try to understand the first average pooling layer to the second convolution layer. The process of this step presented below in the picture. 
 
-![figure6]({{site.baseurl}}/assets/img/lenetone/imag6.PNG)
+![figure6]({{site.baseurl}}/assets/img/lenetone/imag6.png)
 
 To the generate the second convolution layer from the first average pooling layer, twelve 5X5 size kernels used. Now we use equation which helps to calculate output shape. 
 The parameters for calculation given below:
@@ -119,7 +119,7 @@ Now insert all the values in the equation.
 ## Fourth Step:
 In the fourth step, try to understand the second convolution layer to the second average pooling layer. The process of this step presented below in the picture. 
 
-![figure7]({{site.baseurl}}/assets/img/lenetone/imag7.PNG)
+![figure7]({{site.baseurl}}/assets/img/lenetone/imag7.png)
 
 To generate the second average pooling layer from the second convolution layer, twelve 2X2 size kernels used. Now we use equation which helps to calculate output shape. 
 The parameters for the calculation given below:
@@ -137,7 +137,7 @@ So, after the calculation, the result is as same as the image, and the output sh
 ## Fifth Step:
 In the fifth step, try to understand the second average pooling layer to flatten layer and connected to the output layer. The process of this step presented below in the picture. 
 
-![figure8]({{site.baseurl}}/assets/img/lenetone/imag8.PNG)
+![figure8]({{site.baseurl}}/assets/img/lenetone/imag8.png)
 
 To connect directly average pooling layer to output layer, first, need to build flatten layer from the average pooling layer and then connect to the output layer. The shape of the flatten layer is 1X192. All the neurons or the units of the flatten layer fully connected to the neurons or units of the output layer.
 

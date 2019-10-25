@@ -3,7 +3,7 @@ layout: post
 title: Break Down Lenet-1
 date: 2018-08-29 
 description: Here I discuss about Lenet-1. # Add post description (optional)
-img: fknn-heading.jpg # Add image post (optional)
+img: lenetone-heading.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [LeNet-1, Introduction to Lenet-1, What is LeNet-1, Lenet-1 CNN]
 ---

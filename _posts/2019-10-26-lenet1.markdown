@@ -24,19 +24,33 @@ P is the number of padding.
 S is the number of pixels shift over the input matrix.
 
 An example image presented below. Where, the size of the input image is 20X20, size of single filter 4X4 and the size of the output shape 17X17, which is the result. So from the image we consider the value of W is 20, the value of K is 4, the value of P is 0 as there is no extra padding in the image and the value of the stride is 1 (consider). After applying these values in the equation, the output is 17.
+
 ![equation2]({{site.baseurl}}/assets/img/lenetone/equation2.PNG)
+
 So, from the above equation, the output shape is 17X17, and it's similar to the image presented below.
+
 ![figure1]({{site.baseurl}}/assets/img/lenetone/imag1.PNG)
+
 If the height and width of the image are not equal, then the equation will be the same, but the elements of the equation must different based on the height and width. Need to calculate output shape for the height and width separately. 
 The equation to calculate the output shape of the height given below.
+
 ![equation3]({{site.baseurl}}/assets/img/lenetone/equation3.PNG)
+
 The equation to calculate the output shape of the width given below.
+
 ![equation4]({{site.baseurl}}/assets/img/lenetone/equation4.PNG)
+
 An example image presented below. Where, the size of the input image is 20X18, size of single filter 4X4 and the size of the output shape 17X15, which is the result. So from the image we consider the value of the height of the input image is 20, the width of the input image is 18, the value of the height of the kernel is 4, the value of the width of the kernel is 4, number of padding is 0 as there is no extra padding in the image and the value of the stride is 1 (consider). After applying these values in the separate equation for height and width, the output shape is 17X15 (height is 17 and width is 15), and it's similar to the image presented below. 
+
 ![equation5]({{site.baseurl}}/assets/img/lenetone/equation5.PNG)
+
+
 ![figure2]({{site.baseurl}}/assets/img/lenetone/imag2.PNG)
+
 Now, Its time to break down LeNet-1 architecture. The common image of the LeNet-1 architecture presented below. The LeNet-1 architecture is a first simple architecture for the convolutional neural network. It's easy to understand and implement. 
+
 ![figure3]({{site.baseurl}}/assets/img/lenetone/imag3.PNG)
+
 The specification of the LeNet-1 presented below layerwise.
 Input shape of the image is 28X28.
 Four 24X24 feature maps in the convolutional layer by using four 5X5 kernels or filters.
@@ -46,9 +60,12 @@ Twelve 4X4 feature maps in the average pooling layer by using twelve 2X2 kernels
 Directly fully connected to the output layers of 10 units.
 
 Now, try to understand visually how every step works in the LeNet-1 architecture. 
+
 ## First Step: 
 In the first step, try to understand the input image to the first convolution layer. The process of this step presented below in the picture. 
+
 ![figure4]({{site.baseurl}}/assets/img/lenetone/imag4.PNG)
+
 To generate the first convolution layer from the input image, four 5X5 size kernels used. Now we use equation which helps to calculate output shape. 
 The parameters for calculation given below:
 1.	Input size 28X28X1 (assume 2D image) (W=28).
@@ -57,12 +74,16 @@ The parameters for calculation given below:
 4.	Number of padding 0 (P=0)
 5.	Stride 1 (S=1) 
 Now insert all the values in the equation.
+
 ![equation6]({{site.baseurl}}/assets/img/lenetone/equation6.PNG)
+
 So, after the calculation, the result is as same as the image, and the output shape of the first convolution layer is 24X24X4.
 
 ## Second Step:
 In the second step, try to understand the first convolution layer to first average pooling layer. The process of this step presented below in the picture. 
+
 ![figure5]({{site.baseurl}}/assets/img/lenetone/imag5.PNG)
+
 To the generate the first average pooling layer from the first convolution layer, four 2X2 size kernels used. Now we use equation which helps to calculate output shape. 
 The parameters for the calculation given below:
 1.	Input size 24X24X4 (W=24).
@@ -71,12 +92,16 @@ The parameters for the calculation given below:
 4.	Number of padding 0 (P=0)
 5.	Stride 2 (S=2) 
 Now insert all the values in the equation.
+
 ![equation7]({{site.baseurl}}/assets/img/lenetone/equation7.PNG)
+
 So, after the calculation, the result is as same as the image, and the output shape of the first average pooling layer is 12X12X4.
 
 ## Third Step:
 In the third step, try to understand the first average pooling layer to the second convolution layer. The process of this step presented below in the picture. 
+
 ![figure6]({{site.baseurl}}/assets/img/lenetone/imag6.PNG)
+
 To the generate the second convolution layer from the first average pooling layer, twelve 5X5 size kernels used. Now we use equation which helps to calculate output shape. 
 The parameters for calculation given below:
 1.	Input size 12X12X4 (W=12).
@@ -85,11 +110,15 @@ The parameters for calculation given below:
 4.	Number of padding 0 (P=0)
 5.	Stride 1 (S=1) 
 Now insert all the values in the equation.
+
 ![equation8]({{site.baseurl}}/assets/img/lenetone/equation8.PNG)
+
 
 ## Fourth Step:
 In the fourth step, try to understand the second convolution layer to the second average pooling layer. The process of this step presented below in the picture. 
+
 ![figure7]({{site.baseurl}}/assets/img/lenetone/imag7.PNG)
+
 To generate the second average pooling layer from the second convolution layer, twelve 2X2 size kernels used. Now we use equation which helps to calculate output shape. 
 The parameters for the calculation given below:
 1.	Input size 8X8X12 (W=8).
@@ -98,12 +127,16 @@ The parameters for the calculation given below:
 4.	Number of padding 0 (P=0)
 5.	Stride 2 (S=2) 
 Now insert all the values in the equation.
+
 ![equation9]({{site.baseurl}}/assets/img/lenetone/equation9.PNG)
+
 So, after the calculation, the result is as same as the image, and the output shape of the first average pooling layer is 4X4X12.
 
 ## Fifth Step:
 In the fifth step, try to understand the second average pooling layer to flatten layer and connected to the output layer. The process of this step presented below in the picture. 
+
 ![figure8]({{site.baseurl}}/assets/img/lenetone/imag8.PNG)
+
 To connect directly average pooling layer to output layer, first, need to build flatten layer from the average pooling layer and then connect to the output layer. The shape of the flatten layer is 1X192. All the neurons or the units of the flatten layer fully connected to the neurons or units of the output layer.
 
 By following this way, LeNet-1 architecture buildup. In the architecture tanh used as an activation function. 

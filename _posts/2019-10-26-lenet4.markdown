@@ -111,7 +111,7 @@ The fifth layer of the Lenet-4 architecture is fully connected convolutional lay
 ## Layer 6: 
 The final layer of the LeNet-4 architecture is fully connected output layer y shortly output layer with 10 possible values where tanh used as an activation function. Fully connected layer with 120 units connects with output layer. After summation, all the values of the units of the output layers must stay between 0-1. As the LeNet-4 architecture used for MNIST data, that’s why 10 possible units of output layers corresponding to the digits from 0 to 9. For better understanding, a picture of the process presented below.
 
-![figure6]({{site.baseurl}}/assets/img/lenetfour/image6.png)
+![figure6]({{site.baseurl}}/assets/img/lenetfour/image7.png)
 
 
 

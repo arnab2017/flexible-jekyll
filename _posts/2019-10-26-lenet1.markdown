@@ -31,7 +31,7 @@ An example image presented below. Where, the size of the input image is 20X20, s
 
 So, from the above equation, the output shape is 17X17, and it's similar to the image presented below.
 
-![figure1]({{site.baseurl}}/assets/img/lenetone/imag1.PNG)
+![figure1]({{site.baseurl}}/assets/img/lenetone/imag1.png)
 
 If the height and width of the image are not equal, then the equation will be the same, but the elements of the equation must different based on the height and width. Need to calculate output shape for the height and width separately. 
 The equation to calculate the output shape of the height given below.
@@ -47,7 +47,7 @@ An example image presented below. Where, the size of the input image is 20X18, s
 ![equation5]({{site.baseurl}}/assets/img/lenetone/equation5.PNG)
 
 
-![figure2]({{site.baseurl}}/assets/img/lenetone/imag2.PNG)
+![figure2]({{site.baseurl}}/assets/img/lenetone/imag2.png)
 
 Now, Its time to break down LeNet-1 architecture. The common image of the LeNet-1 architecture presented below. The LeNet-1 architecture is a first simple architecture for the convolutional neural network. It's easy to understand and implement. 
 

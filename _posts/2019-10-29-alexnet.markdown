@@ -23,17 +23,29 @@ In the training time, AlexNet divided into two parts and ran parallelly on two G
 
 The specification of the AlexNet presented below layer-wise.
 Input Layer: The input shape of the image is 224x224.
+
 Layer 1: Ninety-Six (96) 55x55 feature maps in the first convolutional layer by using ninety-six (96) kernels of size 11x11 with stride of 4 pixels.
+
 Layer 2: Ninety-Six (96) 27x27 feature maps in the first max-pooling layer by using ninety-six (96) kernels of size 3x3 with stride of 2 pixels.
+
 Layer 3: Two hundred fifty-six (256) 27x27 feature maps in the second convolutional layer by using two hundred fifty-six (256) kernels of size 5x5 with stride of 1 pixel.
+
 Layer 4: Two hundred fifty-six (256) 13x13 feature maps in the second max-pooling layer by using two hundred fifty-six (256) kernels of size 3x3 with stride of 2 pixels.
+
 Layer 5: Three hundred eighty-four (384) 13x13 feature maps in the third convolutional layer by using three hundred eighty-four (384) kernels of size 3x3 with stride of 1 pixel.
+
 Layer 6: Three hundred eighty-four (384) 13x13 feature maps in the fourth convolutional layer by using three hundred eighty-four (384) kernels of size 3x3 with stride of 1 pixel.
+
 Layer 7: Two hundred fifty-six (256) 13x13 feature maps in the fifth convolutional layer by using two hundred fifty-six (256) kernels of size 3x3 with stride of 1 pixel.
+
 Layer 8: Two hundred fifty-six (256) 6x6 feature maps in the third max-pooling layer by using two hundred fifty-six (256) kernels of size 3x3 with stride of 2 pixels.
+
 Layer 9: First fully connected layer of 4096 neurons.
+
 Layer 10: Second fully connected layer of 4096 neurons.
+
 Output Layer: Output layers of 1000 neurons.
+
 The units of the output layer depend on the number of classes. Suppose one thousand classes in the dataset, then number units in the output layer must be 1000.
 
 Now, I am going to explain how to generate outputs in each layer. 
